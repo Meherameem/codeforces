@@ -1,0 +1,17 @@
+import math
+
+M, N = input().split()
+M = int(M)
+N = int(N)
+if 1 <= M <= N <= 16:
+    a = math.floor(M / 2)
+    b = int(a * N)
+    c = M % 2
+    if c == 0:
+        print(int(b))
+    else:
+        d = N / 2
+        print(int(b + d))
+
+else:
+    print("error")

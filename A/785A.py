@@ -1,0 +1,11 @@
+n = int(input())
+l = list()
+for i in range(n):
+    x = input()
+    l.append(x)
+t = l.count('Tetrahedron')
+c = l.count('Cube')
+o = l.count('Octahedron')
+d = l.count('Dodecahedron')
+i = l.count('Icosahedron')
+print((4 * t) + (6 * c) + (8 * o) + (12 * d) + (20 * i))
